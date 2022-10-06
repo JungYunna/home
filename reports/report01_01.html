@@ -2,12 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Yunna Home</title>
+    <title>취업 정보 계정 만들기</title>
 </head>
 <body>
-<h2>과제</h2> <hr>
-<ol>
-    <li><a href="reports/report01_01.html">과제 1</a></li>
-</ol>
+<h2>취업 정보 계정 만들기</h2> <br>
+* 필수 입력 항목 <br><br>
+기본 정보 <br><br>
+<form>
+    이름*<input type="text" value="" size="8"><br>
+    이메일*<input type="email" placeholder="id@domain_name" size="15"><br>
+    암호*<input type="password" value="" size="12"><br>
+    암호 확인*<input type="password" value="" size="12"><br>
+    모바일 폰*<input type="tel" placeholder="010-0000-0000" size="13"><br>
+    개인 홈페이지<input type="url" placeholder="http://" size="30"><br>
+    주소*<input type="text" value="" size="30">
+</form><br><br>
+학력<br><br>
+<form>
+    학교 명*<input type="text" value="" size="12"><br>
+    전공*<input type="text" value="" size="12"><br>
+    졸업여부*<select name="졸업여부">
+            <option value ="1">---선택---</option>
+            <option value ="2">졸업예정</option>
+            <option value ="3">졸업</option>
+            </select><br>
+    졸업(예정)일<input type="date">
+</form><br><br>
+업무 경력<br><br>
+<form>
+    근무업체명<input type="text" value="" size="20"><br>
+    직위<input type="text" value="" size="10"><br>
+    담당 업무<textarea cols="80" rows="10">이전 업체에서 담당한 업무를 기술하시오.</textarea>
+    근무년수<input type="number" min="0" max="10" ste="0.5">년<br>
+</form><br><br>
+자기소개서<br><br>
+<form>
+    첨부파일<input type="file">
+</form><br><br>
+<form>
+    <center><input type="submit" value="제출">
+    <input type="reset" value="재작성"></center>
+</form>
+
 </body>
 </html>
