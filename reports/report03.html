@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트 프로그래밍</title>
+     <script>
+     function bh(binary) {
+         var decimal
+         decimal=parseInt(binary,2);
+
+         var hexa = decimal.toString(16)
+         document.write(hexa);
+     }
+   </script>
+</head>
+<body>
+<script>
+    var binary = prompt("2진수를 16진수로 변환",'');
+    bh(binary);
+</script>
+</body>
+</html>
+
+
+

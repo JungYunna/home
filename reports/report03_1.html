@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트 프로그래밍</title>
+    <script>
+        function new_row(prev_row)
+{
+    for(line = 1; line <= prev_row; line++)
+    {
+
+    var C=1;// used to represent C(line, i)
+    for(i = 1; i <= line; i++)
+    {
+        // The first value in a line is always 1
+        document.write(C+" ");
+        C = C * (line - i) / i;
+    }
+    document.write("<br>");
+    }
+}
+    </script>
+</head>
+<body>
+<script>
+var prev_row = prompt("파스칼 삼각형 높이:",'');
+    new_row(prev_row);
+    </script>
+</body>
+</html>
